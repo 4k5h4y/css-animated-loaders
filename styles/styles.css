@@ -1,0 +1,62 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../assets/images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: auto;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+::placeholder{
+    color: red;
+    opacity: 1;
+}
+.glassmorph{
+    background: rgba( 255, 255, 255, 0.25 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+.box-center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.row-center{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.custom{
+    height: 500px;
+    width: 750px;
+}
+.loader{
+    height: 100px;
+    width: 100px;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    animation: spin 2s cubic-bezier(0.89, -0.46, 0.2, 1.33) infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
